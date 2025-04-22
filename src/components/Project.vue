@@ -35,7 +35,7 @@ const myProps = defineProps<{
             text: 'This project was developed during my employment and cannot be shared due to company confidentiality policies.',
           }"
         >
-          <v-icon icon="mdi-alert-outline" size="small" class="mr-1"></v-icon>at work</v-alert
+          <v-icon icon="mdi-alert-outline" size="small" class="mr-1"></v-icon>in Nidec</v-alert
         >
         <v-card-subtitle class="d-flex opacity-100">
           <div class="mr-3" v-for="(s, sIdx) in subtitle" :key="`subtitle_${sIdx}`" style="font-size: 1rem">

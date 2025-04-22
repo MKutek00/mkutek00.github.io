@@ -253,6 +253,20 @@ const projects = [
     ],
   },
 ];
+
+function openAndDownload() {
+  const fileUrl = './CV_PL.pdf';
+
+  window.open(fileUrl, '_blank');
+
+  const a = document.createElement('a');
+  a.href = fileUrl;
+  a.download = 'CV_PL.pdf';
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
 </script>
 
 <template>
@@ -261,7 +275,7 @@ const projects = [
       <v-container fluid class="py-0">
         <v-row class="h-100">
           <v-col cols="5" class="my-auto px-10">
-            <v-avatar size="200" image="/ja.jpg"></v-avatar>
+            <v-avatar size="200" image="/Me.jpg"></v-avatar>
             <h1>Mateusz Kutek</h1>
             <h2
               class="text-subtitle-1 text-medium-emphasis font-weight-thin text-justify w-75"
@@ -303,6 +317,10 @@ const projects = [
                 <a href="https://www.linkedin.com/in/mkutek00/" target="_blank" class="text-decoration-none text-white"
                   >Linkedin</a
                 >
+              </v-list-item>
+              <v-divider class="w-50" />
+              <v-list-item prepend-icon="mdi-book-open-variant-outline">
+                <a href="#" @click="openAndDownload" class="text-decoration-none text-white"> Read resume - PL </a>
               </v-list-item>
             </v-list>
           </v-col>
