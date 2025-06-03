@@ -3,6 +3,38 @@ import Project from './components/Project.vue';
 
 const projects = [
   {
+    work: false,
+    title: 'Spizarnia',
+    subtitle: [
+      {
+        icon: 'https://vuejs.org/logo.svg',
+        text: 'VUE',
+      },
+      {
+        icon: 'https://pinia.vuejs.org/logo.svg',
+        text: 'PINIA',
+      },
+      {
+        icon: 'https://vuetifyjs.com/favicon.ico',
+        text: 'VUETIFY',
+      },
+    ],
+    text: `Spiżarnia is a responsive web app for managing your home food supplies.
+      You can quickly add products manually, by voice (Web Speech API), or by scanning barcodes with your device’s camera (ZXing, OpenFoodFacts).
+      Select the products you have, and the app will translate their names into English and fetch recipes from the Spoonacular service.
+      The app is fully mobile-friendly and easy to use on smartphones and tablets.`,
+    action: [
+      {
+        type: 'APP',
+        link: 'https://mkutek00.github.io/spizarnia_vue/',
+      },
+      {
+        type: 'CODE',
+        link: 'https://github.com/MKutek00/spizarnia_vue',
+      },
+    ],
+  },
+  {
     work: true,
     title: 'ANDON',
     subtitle: [
@@ -114,10 +146,6 @@ const projects = [
         type: 'CODE',
         link: 'https://github.com/MKutek00/stock_tracker',
       },
-      {
-        type: 'APP',
-        link: '',
-      },
     ],
   },
   {
@@ -148,15 +176,7 @@ const projects = [
     action: [
       {
         type: 'CODE',
-        link: 'https://github.com/MKutek00/stock_tracker_nest',
-      },
-      {
-        type: 'CODE',
-        link: 'https://github.com/MKutek00/stock_tracker',
-      },
-      {
-        type: 'APP',
-        link: '',
+        link: 'https://github.com/MKutek00/Mobilna-Terapia.git',
       },
     ],
   },
@@ -197,10 +217,6 @@ const projects = [
         type: 'CODE',
         link: 'https://github.com/MKutek00/SundayLeague-Vue.js-PHP-',
       },
-      {
-        type: 'APP',
-        link: '',
-      },
     ],
   },
   {
@@ -226,10 +242,6 @@ const projects = [
         type: 'CODE',
         link: 'https://github.com/MKutek00/Sunday-League',
       },
-      {
-        type: 'APP',
-        link: '',
-      },
     ],
   },
   {
@@ -245,10 +257,6 @@ const projects = [
       {
         type: 'CODE',
         link: 'https://github.com/MKutek00/Java---ToDo',
-      },
-      {
-        type: 'APP',
-        link: '',
       },
     ],
   },
